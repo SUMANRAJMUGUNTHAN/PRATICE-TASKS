@@ -1,0 +1,106 @@
+/* Reset and font */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf6ec;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo style */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #f9a825; /* yellow-orange hover */
+}
+
+/* Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-buttons button:hover{
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+    background-color: rgb(240, 158, 50);
+}
+
+.btn-signup,
+.btn-login {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-signup {
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #0e0d0d;
+}
+
+.btn-login {
+  background-color: #f9a825;
+  color: white;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin: 15px 0;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .btn-signup,
+  .btn-login {
+    width: 100%;
+  }
+}
