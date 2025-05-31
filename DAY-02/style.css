@@ -66,6 +66,7 @@ body {
   display: flex;
   gap: 10px;
 }
+
 .auth-buttons button:hover {
   text-decoration: none;
   color: inherit;
@@ -103,6 +104,11 @@ body {
   background-color: #f9a825;
   color: white;
   border: none;
+}
+
+.auth-buttons a{
+  text-decoration: none;
+  color: black;
 }
 
 .btn-login.large {
@@ -188,13 +194,13 @@ div.card:hover {
 }
 
 /* Footer */
-/* .footer-text {
+.footer-text {
   text-align: center;
   padding: 30px 20px;
   font-size: 1.5rem;
   font-weight: bold;
   background-color: #fff2d1;
-} */
+}
 
 /* Responsive */
 @media (max-width: 768px) {
